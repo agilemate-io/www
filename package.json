@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build && cp dist/index.html dist/404.html",
+    "check": "eslint . --ignore-path .gitignore && vue-tsc --noEmit",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --ignore-path .gitignore --fix"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
