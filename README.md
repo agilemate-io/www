@@ -1,2 +1,2 @@
 # Agilemate www
-Agilemate public repo
+Agilemate public site repository
